@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body onload="tim()">
+  <header>
+    <div class="logo">
+      <h1>QUIZZ</h1>
+    </div>
+  </header>
+  <main>
+    <div class="soreboard">
+      <div class="teamA">
+           <div class="teamname">Avengers:</div>
+           <div class="score" id="scorea">45</div>
+      </div>
+      <div class="teamB">
+          <div class="teamname">Fighters:</div>
+        
+            <div class="score" id="scoreb">45</div>
+          
+          
+      </div>
+    </div>
+   
+    <div class="questionsBorad">
+      <div class="questions">
+        <div class="quesblock">
+          <div class="question-part">5. Which of the following language does the computer understand?</div>
+          <div class="options">
+            <div class="option-block">
+              <div class="option-no-block"><p class="optn">(a).</p></div>
+              <div class="option" ><button class="optionbtn" id="incorect" onclick="val(this)">Computer understands only C Language</button></div>
+            </div>
+            <div class="option-block">
+              <div class="option-no-block"><p class="optn">(a).</p></div>
+              <div class="option" id="btnglow"><button class="optionbtn" id="corect" onclick="corect(this)">Computer understands only Binary Language</button></div>
+            </div>
+            <div class="option-block">
+              <div class="option-no-block"><p class="optn">(a).</p></div>
+              <div class="option" ><button class="optionbtn " id="icorect" onclick="val(this)">Computer understands only Assembly Language
+              </button></div>
+            </div>
+            <div class="option-block">
+              <div class="option-no-block"><p class="optn">(a).</p></div>
+              <div class="option" ><button class="optionbtn" id="hide" onclick="val(this)">Computer understands only BASIC</button></div>
+            </div>
+            <div class="nextbtn"><a href="/index.html">Next</a></div>
+          </div>
+        </div>
+        <div class="life-line-block">
+          <div class="life-line-heading">Life Lines</div>
+          <div class="life-line-type-block">
+            <button class="life-line-btn"  onclick="fifty()" >50-50</button>
+            <button class="life-line-btn"onclick="stop()">AP</button>
+            <button class="life-line-btn" onclick="stop()">EA</button>
+            <button class="life-line-btn" onclick="stop()">CQ</button>
+          </div>
+        </div>
+      </div>
+      <div class="timer">
+         <div class="clk">
+          
+         <div id="tim" ></div>
+         </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+     <p>NA Developers pvt Ltd.</p>
+  </footer>
+
+</body>
+</html>
